@@ -9,7 +9,7 @@ const forecast = require("./utils/forecast");
 // console.log(__filename);
 
 const app = express();
-const port = process.env.POR || 3000; //POR = Port (heroku) || fallbackvalue (port 3000 - local)
+const port = process.env.PORT || 3000; //POR = Port (heroku) || fallbackvalue (port 3000 - local)
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, "../public");
